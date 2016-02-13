@@ -2,19 +2,22 @@
 
 import MySQLdb
 import ConfigParser
+from PearPyPac.Util import PearConfig
 
 class PearMySQL:
-    def __init__(self, conf_path):
+    def __init__(self):
         """ initialize """
-        self.conf = self.getConfig(conf_path)
+        self.conf = None
         self.connector = None
         self.cursor = None
 
-    def getConfig(self, conf_path):
+    def setConfig(self, conf_path=None, conf=None):
         """ set configure """
-        conf = ConfigParser.SafeConfigParser()
-        conf.read(conf_path)
-        return conf
+        if conf != None:
+            self.conf = conf
+        else:
+            self.conf = ConfigParser.SafeConfigParser()
+            self.conf.read(conf_path)
 
     def openDB(self):
         """ open database """

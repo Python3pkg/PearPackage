@@ -1,6 +1,7 @@
 setup.py
 PearPyPac/CGI.py
 PearPyPac/DB.py
+PearPyPac/Util.py
 PearPyPac/__init__.py
 PearPyPac.egg-info/PKG-INFO
 PearPyPac.egg-info/SOURCES.txt
