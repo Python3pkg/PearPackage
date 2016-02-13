@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name = "PearPackage",
+    name = "PearPyPac",
     version = "0.0.1",
     license = "MIT",
-    packages=['PearPackage'],
+    packages=['lib'],
     description = 'pear library',
     author = 'Hiroki Umatani',
     author_email = 'h_umatani@pear.chat',
