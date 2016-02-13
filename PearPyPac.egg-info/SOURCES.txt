@@ -1,4 +1,5 @@
 setup.py
+PearPyPac/CGI.py
 PearPyPac/DB.py
 PearPyPac/__init__.py
 PearPyPac.egg-info/PKG-INFO
