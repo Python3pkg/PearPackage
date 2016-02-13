@@ -9,13 +9,13 @@ class PearCGI:
     def __init__(self):
         return
 
-    def checkPOSTMethod(self):
+    def isMethodPOST(self):
         if(os.environ["REQUEST_METHOD"] == "POST"):
             return True
         else:
             return False
 
-    def checkGETMethod(self):
+    def isMethodGET(self):
         if(os.environ["REQUEST_METHOD"] == "GET"):
             return True
         else:
