@@ -1,0 +1,7 @@
+setup.py
+PearMySQL/MySQL.py
+PearMySQL/__init__.py
+PearMySQL.egg-info/PKG-INFO
+PearMySQL.egg-info/SOURCES.txt
+PearMySQL.egg-info/dependency_links.txt
+PearMySQL.egg-info/top_level.txt
