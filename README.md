@@ -1,4 +1,2 @@
-# PearMySQL
-easy mysql lib
-
 # PearPackage
+https://pypi.python.org/pypi/PearPyPac
