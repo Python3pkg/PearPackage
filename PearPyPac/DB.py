@@ -2,7 +2,6 @@
 
 import MySQLdb
 import ConfigParser
-from PearPyPac.Util import PearConfig
 
 class PearMySQL:
     def __init__(self):

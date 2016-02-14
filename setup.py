@@ -1,13 +1,14 @@
 from setuptools import setup
 
 setup(
-    name = "PearPyPac",
-    version = "0.1.8",
-    license = "MIT",
+    name="PearPyPac",
+    version="0.1.9",
+    license="MIT",
     packages=['PearPyPac'],
-    description = 'pear library',
-    author = 'Hiroki Umatani',
-    author_email = 'h_umatani@pear.chat',
-    url = 'https://github.com/HirokiUmatani/PearPackage',
-    keywords = ['pear', 'db', 'mysql', 'cgi', 'get', 'post', 'utility'],
+    description='pear library',
+    author='Hiroki Umatani',
+    author_email='h_umatani@pear.chat',
+    url='https://github.com/HirokiUmatani/PearPackage',
+    keywords=['PearPyPac', 'pear'],
+    install_requires=['MySQL-python','ConfigParser'],
 )
