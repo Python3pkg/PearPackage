@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import MySQLdb
-import ConfigParser
+import configparser
 
 class PearMySQL:
     def __init__(self):
@@ -15,7 +15,7 @@ class PearMySQL:
         if conf != None:
             self.conf = conf
         else:
-            self.conf = ConfigParser.SafeConfigParser()
+            self.conf = configparser.ConfigParser()
             self.conf.read(conf_path)
 
     def openDB(self):
