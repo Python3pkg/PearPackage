@@ -16,7 +16,7 @@ class PearMySQL:
             self.conf = conf
         else:
             self.conf = configparser.ConfigParser()
-            self.conf.read(conf_path)
+            self.conf.read_file(open(conf_path))
 
     def openDB(self):
         """ open database """

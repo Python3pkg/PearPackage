@@ -7,5 +7,5 @@ class PearConfig:
     def getConfig(self, conf_path):
         """ set configure """
         conf = configparser.ConfigParser()
-        conf.read(conf_path)
+        conf.read_file(open(conf_path))
         return conf
