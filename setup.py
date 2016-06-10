@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="PearPyPac",
-    version="0.1.9",
+    version="0.2.0",
     license="MIT",
     packages=['PearPyPac'],
     description='pear library',
@@ -10,5 +10,5 @@ setup(
     author_email='h_umatani@pear.chat',
     url='https://github.com/HirokiUmatani/PearPackage',
     keywords=['PearPyPac', 'pear'],
-    install_requires=['MySQL-python','ConfigParser'],
+    install_requires=['mysqlclient','ConfigParser'],
 )
