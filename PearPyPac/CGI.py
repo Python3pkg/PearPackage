@@ -5,26 +5,27 @@ import cgi
 import json
 
 
-class PearCGI:
-    def __init__(self):
-        return
+class PearCGI(object):
 
-    def isMethodPOST(self):
-        if(os.environ["REQUEST_METHOD"] == "POST"):
-            return True
-        else:
-            return False
+	def __init__(self):
+		return
 
-    def isMethodGET(self):
-        if(os.environ["REQUEST_METHOD"] == "GET"):
-            return True
-        else:
-            return False
+	def isMethodPOST(self):
+		if(os.environ["REQUEST_METHOD"] == "POST"):
+			return True
+		else:
+			return False
 
-    def getParameter(self):
-        parameter = cgi.FieldStorage()
-        return parameter
+	def isMethodGET(self):
+		if(os.environ["REQUEST_METHOD"] == "GET"):
+			return True
+		else:
+			return False
 
-    def jsonEncode(self, data):
-            results = json.dumps(data, indent=4)
-            return results
+	def getParameter(self):
+		parameter = cgi.FieldStorage()
+		return parameter
+
+	def jsonEncode(self, data):
+		results = json.dumps(data, indent=4)
+		return results
