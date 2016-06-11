@@ -2,7 +2,6 @@
 
 import os
 import cgi
-import json
 
 
 class PearCGI(object):
@@ -23,9 +22,6 @@ class PearCGI(object):
 			return False
 
 	def getParameter(self):
-		parameter = cgi.FieldStorage()
-		return parameter
+		param = cgi.FieldStorage()
+		return param
 
-	def jsonEncode(self, data):
-		results = json.dumps(data, indent=4)
-		return results
