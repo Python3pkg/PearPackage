@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="PearPyPac",
-    version="0.2.8",
+    version="0.3.0",
     license="MIT",
     packages=['PearPyPac'],
     description='pear library',
