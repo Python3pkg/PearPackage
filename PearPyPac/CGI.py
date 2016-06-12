@@ -15,7 +15,7 @@ class PearCGI(object):
 
 	def isMethod(self, methodName):
 		method = os.environ['REQUEST_METHOD']
-		if method is methodNeme:
+		if method == methodNeme:
 			return True
 		else:
 			return False
