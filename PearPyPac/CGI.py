@@ -13,13 +13,6 @@ class PearCGI(object):
 		methodName = os.environ['REQUEST_METHOD']
 		return methodName
 
-	def isMethod(self, methodName):
-		method = os.environ['REQUEST_METHOD']
-		if method == methodNeme:
-			return True
-		else:
-			return False
-
 	def getParam(self):
 		self.param = cgi.FieldStorage()
 		return self.param
