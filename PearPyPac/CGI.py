@@ -14,7 +14,7 @@ class PearCGI(object):
 		return methodName
 
 	def isMethod(self, methodName):
-		if(self.getMethod() == methodNeme):
+		if(self.getMethod() is methodNeme):
 			return True
 		else:
 			return False
@@ -28,7 +28,10 @@ class PearCGI(object):
 		return value
 
 	def isValue(self, value):
-		if not value
+		if not value:
 			return False
-		else
+		else:
 			return True
+
+if __name__ == '__main__':
+	cgi = PearCGI()
