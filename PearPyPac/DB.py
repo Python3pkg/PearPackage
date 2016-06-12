@@ -12,13 +12,10 @@ class PearMySQL(object):
 		self.connector = None
 		self.cursor = None
 
-	def setConfig(self, conf_path=None, conf=None):
+	def setConfig(self, conf_path):
 		""" set configure """
-		if conf != None:
-			self.conf = conf
-		else:
-			self.conf = configparser.ConfigParser()
-			self.conf.read(conf_path)
+		self.conf = configparser.ConfigParser()
+		self.conf.read(conf_path)
 
 	def openDB(self):
 		""" open database """
