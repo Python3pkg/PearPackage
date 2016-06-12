@@ -8,7 +8,6 @@ class PearCGI(object):
 
 	def __init__(self):
 		self.param = None
-		return
 
 	def getMethod(self):
 		methodName = os.environ['REQUEST_METHOD']
