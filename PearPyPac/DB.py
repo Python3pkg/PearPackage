@@ -60,3 +60,6 @@ class PearMySQL(object):
 		self.cursor.execute(query)
 		self.connector.commit()
 		self.closeDB()
+
+if __name__ == '__main__':
+	db = PearMySQL()

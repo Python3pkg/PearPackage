@@ -13,6 +13,3 @@ class PearConfig(object):
 
 if __name__ == '__main__':
 	conf = PearConfig()
-	result = conf.getConfig('sample.ini')
-	print (result['default']['samplevalue'])
-	print (result['default']['samplestring'])
