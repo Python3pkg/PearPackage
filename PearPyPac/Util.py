@@ -13,3 +13,4 @@ class PearConfig(object):
 
 if __name__ == '__main__':
     conf = PearConfig()
+    conf.getConfig('sample.ini')
