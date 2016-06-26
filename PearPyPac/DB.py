@@ -48,6 +48,7 @@ class PearMySQL(object):
         """ close cursor for database """
         self.cursor.close()
 
+    # fetch request
     def queryFetch(self, query):
         self.openDB()
         self.cursor.execute(query)
@@ -55,6 +56,7 @@ class PearMySQL(object):
         self.closeDB()
         return results
 
+    # insert, update & delete request
     def query(self, query):
         self.openDB()
         self.cursor.execute(query)
