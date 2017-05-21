@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import cgi
+from . import cgi
 
 
 class PearCGI(object):
